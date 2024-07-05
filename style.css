@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Permanent+Marker&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f0f0f0;
+    color: #333;
+    height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #6bffb0, #65dbf0);
+    color: #1e456c;
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'Permanent Marker', cursive;
+}
+img{
+    height: 100%;
+    width: 10em;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(70%);
+}
+
+.parallax1 {
+    background-image: url('image1.jpg');
+}
+
+.parallax2 {
+    background-image: url('image2.jpg');
+}
+
+.parallax3 {
+    background-image: url('image3.jpg');
+}
+
+.content {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content h2 {
+    color: #371bea;
+    margin-bottom: 10px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.content p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    margin: 10px 0;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-item h3 {
+    color: #371bea;
+}
+
+footer {
+    background: linear-gradient(135deg, #f06595, #ff6b6b);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Permanent Marker', cursive;
+}
