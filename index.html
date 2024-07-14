@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Développeur - Thème Manga</title>
+    <title>Portfolio de Développeur kris clotilde Java Typescript</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+
+
+        (function () {
+            emailjs.init("user_MfjcZd0ZaWwORBo8LF9olA");
+        })();
+    </script>
 </head>
 <body>
 <header>
-
     <div class="header-content">
-
         <ul>
             <li><a href="#propos">A propos</a></li>
             <li><a href="#experience">Experiences</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#projets">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#FormContact">Contact</a></li>
         </ul>
 
     </div>
@@ -39,19 +45,19 @@
     <h2>Mon Expérience</h2>
     <div class="timeline">
         <div class="timeline-item">
-            <h3>2022-Actuellement</h3>
+            <h3> &nbsp 2022-Actuellement</h3>
             <p>EDF Client</p>
             <p>Spring, Angular, Agile Kanban, Java, Typescript</p>
             <p>Arolla ESN</p>
             <p>CDI</p>
         </div>
         <div class="timeline-item">
-            <h3>2020-2021</h3>
+            <h3> &nbsp 2020-2021</h3>
             <p>Ideta Start up</p>
             <p>Apprenti Full Typescript</p>
         </div>
         <div class="timeline-item">
-            <h3>2019 - 2020</h3>
+            <h3> &nbsp 2019 - 2020</h3>
             <p>ARKANCE SYSTEMS FRANCE</p>
             <p>Client EDF</p>
             <p>Cycle en V, Strust2, Java, Jquery</p>
@@ -62,7 +68,61 @@
 </section>
 
 <section class="parallax parallax3"></section>
-
+<section id="education">
+    <h2>Éducation</h2>
+    <div class="education-item">
+        <div>
+            <h3>IMIE PARIS</h3>
+            <p><strong>Bac+3 en alternance</strong> (2020)</p>
+            <p>1 an de formation à raison de 3 semaines en entreprise et 1 semaine en cours, Titre professionnel
+                concepteur développeur d'applications</p>
+            <p>École de la filière numérique. Formation pour devenir développeur Full Stack</p>
+        </div>
+    </div>
+    <div class="education-item">
+        <div>
+            <h3>3W Academy</h3>
+            <p><strong>Formation professionnelle à la programmation Java sous Android Studio</strong> (2018)</p>
+        </div>
+    </div>
+    <div class="education-item">
+        <div>
+            <h3>3W Academy</h3>
+            <p><strong>Formation de 3 mois à l'utilisation de Java pour l'élaboration de sites web sous l'IDE
+                IntelliJ</strong> (2017 - 2018)</p>
+        </div>
+    </div>
+    <div class="education-item">
+        <div>
+            <h3>Université de La Réunion</h3>
+            <p><strong>Master 2 B4: biologie moléculaire, biotechnologie et biomédecine, biochimie</strong> (2012 -
+                2014)</p>
+            <p>Niveau : mention assez bien</p>
+            <p>Activités et associations : inscrit à un club de go</p>
+        </div>
+    </div>
+    <div class="education-item">
+        <div>
+            <h3>Université de La Réunion</h3>
+            <p><strong>Licence de biochimie</strong> (2011 - 2012)</p>
+            <p>Niveau : Mention bien</p>
+        </div>
+    </div>
+    <div class="education-item">
+        <div>
+            <h3>IUT Saint Pierre </h3>
+            <p><strong><br>DUT option agroalimentaire et biologique</strong> (2009 - 2011)</p>
+        </div>
+    </div>
+    <div class="education-item">
+        <div>
+            <h3>Lycée Louis Payen</h3>
+            <p><strong> <br>Baccalauréat, Bac S SVT option physique chimie classe européenne Allemand</strong> (2007 -
+                2008)</p>
+            <p>Niveau : Obtenu avec Mention bien</p>
+        </div>
+    </div>
+</section>
 <section id="projets" class="content">
     <h2>Projets</h2>
     <p>Découvrez quelques-uns de mes projets récents.</p>
@@ -98,7 +158,48 @@
     </div>
     <!-- Listez vos projets ici -->
 </section>
+<div class="cont container emailDiv">
+    <h1 id="FormContact">Formulaire de contact</h1>
 
+    <label for="emailAddress">Email</label>
+    <input id="emailAddress" type="email" name="email" placeholder="Votre email" required>
+
+
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px" required></textarea>
+    <script type="text/javascript">
+
+        function hideheader() {
+            document.querySelector("header").classList.add("hide");
+        }
+
+        hideheader();
+        emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
+
+        function validMail(mail) {
+            return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(mail);
+        }
+
+        function sendmail() {
+            if (!validMail(document.getElementById("emailAddress").value)) {
+                alert("Email Invalid")
+            } else {
+                let temparams = {
+                    from_name: document.getElementById("emailAddress").value,
+                    to_name: "site kriss",
+                    message: document.getElementById("subject").value
+                }
+                emailjs.send("service_9hsvs9k", "template_6e8w65r", temparams).then(function (res) {
+                    alert("Message envoyé Merci!!");
+                });
+
+            }
+        }
+
+    </script>
+    <button id="buttonMail" class="button-89" onclick="sendmail()">Envoyer</button>
+
+</div>
 <footer id="contact">
     <p>&copy; 2024 Mon Portfolio kriss</p>
     <a rel="noreferrer"
