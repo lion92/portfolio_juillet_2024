@@ -141,7 +141,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
@@ -164,4 +163,79 @@ footer a {
     .education-item div {
         text-align: center; /* Centre le texte sur les petits écrans */
     }
+}
+
+
+.contarobase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.at-symbol {
+    font-size: 50px;
+    color: black;
+    animation: rotate 3s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+        color: black;
+        border: none;
+    }
+    to {
+        transform: rotateY(360deg);
+        color: #28a745;
+        border: 2px solid;
+    }
+}
+.at-symbol {
+     font-size: 50px;
+    color: #28a745;
+     animation: rotate 3s;
+    border: 2px solid;
+ }
+.explosion {
+    display: inline-block;
+    animation: explode 1s forwards, reassemble 1s 1s forwards;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2)
+    }
+}
+
+@keyframes reassemble {
+    0% {
+        transform: scale(2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.burger{
+    display: none;
+}
+
+.burgerApparait{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagelogo{
+    height: 3em;
+}
+
+.imagelogo:hover{
+    height: 3em;
+    transform: scaleY(1.2);
 }
