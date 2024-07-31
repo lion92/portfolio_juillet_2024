@@ -34,4 +34,6 @@ function prevSlide() {
 
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentSlide);
+    // Défilement automatique toutes les deux secondes
+    setInterval(nextSlide, 2000);
 });
