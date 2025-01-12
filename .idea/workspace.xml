@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd4eca6a-224b-478d-86af-4d03e2db729e" name="Changes" comment="Loisirs">
+    <list default="true" id="bd4eca6a-224b-478d-86af-4d03e2db729e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,16 @@
       <workItem from="1720783759944" duration="1227000" />
       <workItem from="1720856665071" duration="7741000" />
       <workItem from="1721244054652" duration="9426000" />
-      <workItem from="1721502882355" duration="3182000" />
+      <workItem from="1721502882355" duration="4041000" />
+      <workItem from="1722612450184" duration="1771000" />
+      <workItem from="1723062067456" duration="581000" />
+      <workItem from="1723993881115" duration="1318000" />
+      <workItem from="1724868229650" duration="667000" />
+      <workItem from="1724903029006" duration="1191000" />
+      <workItem from="1726771175763" duration="1702000" />
+      <workItem from="1726930808441" duration="685000" />
+      <workItem from="1730559673383" duration="1685000" />
+      <workItem from="1736676686510" duration="134000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -108,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721273008550</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="correction taille des div de you tube réduite">
+      <option name="closed" value="true" />
+      <created>1722441695261</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722441695261</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +137,7 @@
     <MESSAGE value="suite projet avec formulaire de contact" />
     <MESSAGE value="burger menu" />
     <MESSAGE value="Loisirs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Loisirs" />
+    <MESSAGE value="correction taille des div de you tube réduite" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction taille des div de you tube réduite" />
   </component>
 </project>

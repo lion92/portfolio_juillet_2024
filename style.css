@@ -3,9 +3,9 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     color: #333;
     text-align: center; /* Centrer tout le texte */
+    height: 100vh;
 }
 
 header {
